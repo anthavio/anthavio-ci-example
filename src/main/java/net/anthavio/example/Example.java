@@ -1,4 +1,4 @@
-package com.anthavio.example;
+package net.anthavio.example;
 
 /**
  * 

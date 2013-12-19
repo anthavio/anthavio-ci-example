@@ -1,6 +1,8 @@
-package com.anthavio.example;
+package net.anthavio.example;
 
 import static org.fest.assertions.api.Assertions.*;
+import net.anthavio.example.Example;
+
 import org.testng.annotations.Test;
 
 /**
