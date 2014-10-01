@@ -35,7 +35,6 @@
 		<level value="info" />
 		<appender-ref ref="CONSOLE" />
 		<appender-ref ref="LOGFILE" />
-		<appender-ref ref="EVENTSTORE" />
 	</root>
 	
 </configuration>

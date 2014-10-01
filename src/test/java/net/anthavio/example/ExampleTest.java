@@ -1,9 +1,7 @@
 package net.anthavio.example;
 
-import static org.fest.assertions.api.Assertions.*;
-import net.anthavio.example.Example;
-
-import org.testng.annotations.Test;
+import org.assertj.core.api.Assertions;
+import org.junit.Test;
 
 /**
  * 
@@ -16,6 +14,6 @@ public class ExampleTest {
 	public void testHello() {
 		Example example = new Example("Igor");
 		String hello = example.hello("Dolly");
-		assertThat(hello).isEqualTo("Hello Dolly says Igor");
+		Assertions.assertThat(hello).isEqualTo("Hello Dolly says Igor");
 	}
 }
