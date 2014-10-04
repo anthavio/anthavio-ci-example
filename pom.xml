@@ -10,7 +10,7 @@
 	
 	<groupId>net.anthavio</groupId>
 	<artifactId>anthavio-ci-example</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	
 	<name>anthavio-ci-example</name>
@@ -24,7 +24,8 @@
 		<url>https://github.com/anthavio/anthavio-ci-example</url>
 		<connection>scm:git:git://github.com/anthavio/anthavio-ci-example.git</connection>
 		<developerConnection>scm:git:git@github.com:anthavio/anthavio-ci-example.git</developerConnection>
-	</scm>
+	  <tag>v1.0.0</tag>
+  </scm>
 
 	<distributionManagement>
 		<site>
