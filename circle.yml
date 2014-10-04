@@ -1,0 +1,14 @@
+machine:
+  java:
+    version: oraclejdk7
+  maven:
+    version: 3.1.1
+
+test:
+  override:
+    - mvn clean package -Denforcer.skip=true
+
+general:
+  branches:
+    ignore:
+      - gh-pages
