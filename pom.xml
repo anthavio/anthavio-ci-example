@@ -14,9 +14,8 @@
 	<packaging>jar</packaging>
 	
 	<name>anthavio-ci-example</name>
-	
-	<inceptionYear>2013</inceptionYear>
 	<description>Anthavio CI Example</description>
+	<inceptionYear>2013</inceptionYear>
 
 	<url>http://anthavio.github.com/anthavio-ci-example</url>
 	
