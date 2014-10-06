@@ -1,7 +1,7 @@
 anthavio-ci-example
 ===================
 
-Continuous Integration Build and Release Example 
+Not a real project. Just Continuous Integration, Build and Release Showcase
 
 Jenkins [![Build Status](https://vanek.ci.cloudbees.com/buildStatus/icon?job=anthavio-ci-example-snapshot)](https://vanek.ci.cloudbees.com/job/anthavio-ci-example-snapshot/)
 
