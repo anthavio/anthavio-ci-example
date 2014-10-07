@@ -7,6 +7,8 @@ Jenkins [![Build Status](https://vanek.ci.cloudbees.com/buildStatus/icon?job=ant
 
 Coveralls [![Coverage Status](https://coveralls.io/repos/anthavio/anthavio-ci-example/badge.png)](https://coveralls.io/r/anthavio/anthavio-ci-example)
 
+VersionEye [![Dependency Status](http://www.versioneye.com/user/projects/54343151b2a9c5cf0700000d/badge.svg?style=flat)](http://www.versioneye.com/user/projects/54343151b2a9c5cf0700000d)
+
 Travis CI [![Build Status](https://travis-ci.org/anthavio/anthavio-ci-example.svg)](https://travis-ci.org/anthavio/anthavio-ci-example)
 
 Drone CI [![Build Status](https://drone.io/github.com/anthavio/anthavio-ci-example/status.png)](https://drone.io/github.com/anthavio/anthavio-ci-example/latest)
