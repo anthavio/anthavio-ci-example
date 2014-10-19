@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>net.anthavio.maven</groupId>
 		<artifactId>anthavio-super-pom</artifactId>
-		<version>3</version>
+		<version>3.1</version>
 	</parent>
 	
 	<groupId>net.anthavio</groupId>
@@ -27,11 +27,22 @@
   </scm>
 
 	<distributionManagement>
+		<downloadUrl>https://oss.sonatype.org/content/groups/public/net/anthavio/anthavio-ci-example</downloadUrl>
 		<site>
 			<id>github-project-site</id>
 			<url>gitsite:git@github.com/anthavio/anthavio-ci-example.git</url>
 		</site>
 	</distributionManagement>
+	
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/anthavio/anthavio-ci-example/issues</url>
+	</issueManagement>
+	
+	<organization>
+		<name>Anthavio</name>
+		<url>https://github.com/anthavio</url>
+	</organization>
 
 	<developers>
 		
@@ -100,7 +111,29 @@
 	<build>
 
 		<plugins>
-		
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>1.7</version>
+				<configuration>
+					<verbose>false</verbose>
+					<licenseName>lgpl_v3</licenseName> <!-- mvn license:license-list -->
+					<encoding>${project.build.sourceEncoding}</encoding>
+					<excludes>
+						<exclude>**/*.xml</exclude>
+					</excludes>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>update-file-header</goal>
+						</goals>
+						<phase>process-sources</phase>
+					</execution>
+				</executions>
+			</plugin>
+
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>aspectj-maven-plugin</artifactId>
@@ -275,6 +308,43 @@
 			</plugin>
 
 		</plugins>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.codehaus.mojo
+										</groupId>
+										<artifactId>
+											license-maven-plugin
+										</artifactId>
+										<versionRange>
+											[1.7,)
+										</versionRange>
+										<goals>
+											<goal>
+												update-file-header
+											</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 
 </project>
