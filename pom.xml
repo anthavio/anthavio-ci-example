@@ -38,11 +38,6 @@
 		<system>GitHub</system>
 		<url>https://github.com/anthavio/anthavio-ci-example/issues</url>
 	</issueManagement>
-	
-	<organization>
-		<name>Anthavio</name>
-		<url>https://github.com/anthavio</url>
-	</organization>
 
 	<developers>
 		
@@ -116,7 +111,7 @@
 	<build>
 
 		<plugins>
-		
+<!--
 			<plugin>
 				<groupId>org.jvnet.jaxb2.maven2</groupId>
 				<artifactId>maven-jaxb2-plugin</artifactId>
@@ -136,7 +131,7 @@
 					</execution>
 				</executions>
 			</plugin>
-
+-->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>aspectj-maven-plugin</artifactId>
@@ -161,51 +156,11 @@
 			<plugin>
 				<groupId>com.mycila</groupId>
 				<artifactId>license-maven-plugin</artifactId>
-				<version>2.6</version>
 				<configuration>
-					<encoding>${project.build.sourceEncoding}</encoding>
 					<header>com/mycila/maven/plugin/license/templates/LGPL-3.txt</header><!-- APACHE-2 -->
-					<includes>
-						<nclude>**/*.java</nclude>
-					</includes>
-					<!--
-					<excludes>
-						<exclude>**/README</exclude>
-						<exclude>src/test/resources/**</exclude>
-						<exclude>src/main/resources/**</exclude>
-					</excludes>
-					-->
 				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>check</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
-			<!--
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>license-maven-plugin</artifactId>
-				<version>1.7</version>
-				<configuration>
-					<licenseName>lgpl_v3</licenseName> <!- mvn license:license-list ->
-					<encoding>${project.build.sourceEncoding}</encoding>
-					<excludes>
-						<exclude>**/*.xml</exclude>
-					</excludes>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>process-sources</phase>
-						<goals>
-							<goal>update-file-header</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			-->
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
